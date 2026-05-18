@@ -8,3 +8,10 @@ public :
     //  cout<<"pesan dari seorang"<,endl;
     //}
 };
+
+class joko :public seseorang{
+    public:
+    void pesan() {
+        cout << "pesan dari joko" << endl;
+    }
+};
