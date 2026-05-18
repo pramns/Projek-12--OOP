@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class RekeningBank {
@@ -73,6 +74,7 @@ class RekeningPremium : public RekeningBank {
 
 int main(){
   RekeningSyariah rs;
+  cout << fixed << setprecision(0);
   rs.setRekening("Sono", 5000000);
 
   RekeningKonvensional rk;
