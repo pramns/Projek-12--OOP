@@ -26,3 +26,23 @@ class RekeningSyariah : public RekeningBank {
       cout << "----------------------------" << endl;
     }
 };
+
+class RekeningKonvensional : public RekeningBank {
+  private:
+    string nama;
+    double saldo;
+
+  public:
+    void setRekening(string n, double s){
+      nama = n;
+      saldo = s;
+    }
+    void potongAdmin() override {
+      saldo -= 15000;
+      cout << "Nama     : " << nama << endl;
+      cout << "Tipe     : Konvensional" << endl;
+      cout << "Admin    : Rp 15.000 dipotong" << endl;
+      cout << "Saldo    : Rp " << saldo << endl;
+      cout << "----------------------------" << endl;
+    }
+};
