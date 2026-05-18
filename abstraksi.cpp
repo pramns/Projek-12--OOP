@@ -11,4 +11,8 @@ class AbstraksiKlas {
       x=a;
       y=b;
     }
+    void display(){
+      cout << "X = " << x <<endl;
+      cout << "y = " << y <<endl;
+    }
 };
