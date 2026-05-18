@@ -15,3 +15,10 @@ class derivedclass : public baseclass{
     }
 };
 
+int main(){
+  derivedclass a;
+  a.perkenalan1();
+
+  return 0;
+}
+
